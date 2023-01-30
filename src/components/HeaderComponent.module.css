@@ -1,0 +1,38 @@
+header {
+  display: flex;
+  justify-content: center;
+  height: 10rem;
+  width: 100%;
+  border-bottom: 1px solid #b8b8b8;
+  font-family: "Montserrat", Sans-serif;
+}
+
+.header-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 144rem;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-right: 20rem;
+}
+header nav ul li {
+  padding: 1.3rem 2rem;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  letter-spacing: 0.6px;
+}

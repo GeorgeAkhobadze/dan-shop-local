@@ -1,0 +1,123 @@
+.products-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products-page-content {
+    width: 130rem;
+}
+
+.products-page-content p:first-child {
+    margin-top: 8rem;
+}
+
+.products-page-content p {
+    color: #525252;
+    font-family: "Raleway", Sans-serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+.products-page-content h2 {
+    font-size: 6rem;
+    font-weight: 800;
+    margin-top: 11rem;
+}
+
+.product .cont {
+    width: 40rem;
+    height: 42rem;
+    box-shadow: 0px 0px 29px 0px rgb(0 0 0 / 8%);
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 12rem;
+    cursor: pointer;
+    margin-bottom: 10rem;
+    display: block;
+}
+
+.product-img {
+    background-image: url("../../assets/images/Workshop.png");
+    background-size: cover;
+    background-position: center;
+    height: 80%;
+    width: 100%;
+}
+
+.product h5 {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-img-branding {
+    background-image: url("../../assets/images/Branding.png");
+    background-size: cover;
+    background-position: center;
+    height: 80%;
+    width: 100%;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.modalbkgrnd {
+    width: 100vw;
+    height: 100vh;
+    background-color: #5252526c;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 60rem;
+    height: 30rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal h4 {
+    font-size: 4rem;
+    margin-bottom: 6rem;
+}
+
+.btns {
+    display: flex;
+}
+
+.btns a {
+    width: 15rem;
+    height: 3.6rem;
+    background-color: black;
+    color: white;
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btns a:first-child {
+    margin-right: 4rem;
+}
+
+.close {
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 5rem;
+    padding-right: 3.5rem;
+}

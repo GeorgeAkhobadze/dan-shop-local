@@ -1,0 +1,355 @@
+.product-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-page h2 {
+    font-size: 5.2rem;
+    font-weight: 800;
+    margin-top: 11rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.answers {
+    display: flex;
+    justify-content: center;
+}
+
+.firstQuestion .answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer {
+    width: 45rem;
+    height: 36rem;
+    box-shadow: 0px 0px 29px 0px rgb(0 0 0 / 8%);
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 12rem;
+    cursor: pointer;
+    margin-bottom: 10rem;
+    display: block;
+}
+
+.answer h5 {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.answer .img {
+    background-size: cover;
+    background-position: center;
+    height: 80%;
+    width: 100%;
+}
+
+.secondQuestion .answers .answer:first-child .img {
+    background-image: url("../../assets/images/Digital.png");
+}
+
+.secondQuestion .answers .answer:nth-child(2) .img {
+    background-image: url("../../assets/images/Analog.png");
+}
+
+.secondQuestion .answers .answer:nth-child(3) .img {
+    background-image: url("../../assets/images/Hybrid.png");
+}
+
+.firstQuestion .answer:first-child {
+    margin-right: 20rem;
+}
+
+.secondQuestion .answer:first-child,
+.secondQuestion .answer:nth-child(2),
+.thirdQuestion .answer:first-child,
+.thirdQuestion .answer:nth-child(2) {
+    margin-right: 6rem;
+}
+
+.thirdQuestion .answers .answer:first-child .img {
+    background-image: url("../../assets/images/Bei DAN.png");
+}
+
+.thirdQuestion .answers .answer:nth-child(2) .img {
+    background-image: url("../../assets/images/Beim Kunden.png");
+}
+
+.thirdQuestion .answers .answer:nth-child(3) .img {
+    background-image: url("../../assets/images/Externer Workshop Space.png");
+}
+
+.participants {
+    -webkit-appearance: none;
+    width: 110rem;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    margin-top: 10rem;
+    margin-bottom: 6rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.participants:hover {
+    opacity: 1;
+}
+
+.participants:focus {
+    outline: none;
+}
+
+.participants::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #000;
+    cursor: pointer;
+}
+
+.participants::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #000;
+    cursor: pointer;
+}
+
+.participants-num {
+    text-align: center;
+    font-family: "raleway";
+    font-size: 22px;
+    padding-top: 20px;
+}
+
+.back-next-btns {
+    color: #ffffff;
+    background-color: #000000;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 12px 24px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.back-next-btns:first-child {
+    margin-right: 30rem;
+}
+
+.back-next-btns-cont {
+    display: flex;
+    justify-content: center;
+    margin-top: 13rem;
+}
+
+.fifthQuestion h2 {
+    margin-top: 10rem;
+    line-height: 1;
+}
+
+.fifthQuestion .answer:first-child {
+    margin-right: 10rem;
+}
+
+.fifthQuestion .answers .answer:first-child .img {
+    background-image: url("../../assets/images/Catering.png");
+}
+
+.fifthQuestion .answers .answer:nth-child(2) .img {
+    background-image: url("../../assets/images/Teambuilding.png");
+}
+
+.fifthQuestion .back-next-btns-cont {
+    margin-top: 5rem;
+    margin-bottom: 20rem;
+}
+
+.minus-icon {
+    width: 2.8rem;
+}
+
+.module-choose ul {
+    font-family: "Raleway", Sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.module-choose ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.6rem;
+}
+
+.module-choose ul li img,
+.module-choose ul li input {
+    margin-right: 1.5rem;
+}
+
+.module-title {
+    font-family: "Raleway", Sans-serif;
+    font-size: 3.2rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 3.6rem;
+    cursor: pointer;
+}
+
+.module-title img,
+.module-title input {
+    margin-right: 1.5rem;
+}
+
+.module-choose .next-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 20rem;
+}
+
+.module-choose .next-btn a {
+    margin: 0;
+}
+
+.catering h3,
+.teambuilding h3 {
+    font-family: "Raleway", Sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.catering ul,
+.teambuilding ul {
+    list-style: none;
+    margin-bottom: 10rem;
+    font-size: 20px;
+}
+
+.catering ul li,
+.teambuilding ul li {
+    margin-bottom: 2rem;
+}
+
+.catering ul li img,
+.teambuilding ul li img,
+.catering ul li input,
+.teambuilding ul li input {
+    margin-right: 1.5rem;
+}
+
+.overview-comp div {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 3.2rem;
+}
+
+.overview-comp ul {
+    list-style-position: inside;
+    font-family: "Raleway", Sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.overview-comp ul li {
+    margin-bottom: 1.2rem;
+}
+
+.overview-comp .back-next-btns-cont {
+    margin: 10rem;
+}
+
+.add-cart-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-cart-modal .modal {
+    width: 140rem;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5.7rem;
+}
+
+.add-cart-modal .modal .back-next-btns-cont {
+    margin: 10rem;
+}
+
+.close-modal {
+    display: flex;
+    justify-content: end;
+    padding-right: 5rem;
+    width: 100%;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.close-modal span {
+    cursor: pointer;
+}
+
+select {
+    width: 300px;
+    height: 4.8rem;
+    font-size: 2rem;
+}
+
+.money-amount {
+    border: 1px solid #5B5B5B;
+    position: fixed;
+    bottom: 2rem;
+    width: 25rem;
+    right: 20rem;
+    font-size: 2.4rem;
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+.on-hover {
+    position: relative;
+}
+
+.hover {
+    position: absolute;
+    top: -5rem;
+    left: 3rem;
+    padding: 1rem;
+    display: none;
+    background-color: #e6dfdf;
+    z-index: 10;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #4d4a4a;
+}
+
+.on-hover:hover .hover {
+    display: block;
+}

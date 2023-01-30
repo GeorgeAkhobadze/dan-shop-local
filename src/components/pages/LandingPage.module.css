@@ -1,0 +1,37 @@
+.landing-page {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", Sans-serif;
+  text-align: center;
+}
+.landing-page h2 {
+  font-size: 8.4rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  line-height: 1;
+  letter-spacing: 5px;
+}
+
+.landing-page p {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  margin-bottom: 4rem;
+  letter-spacing: 1px;
+}
+
+.landing-btn {
+  font-family: "Raleway", Sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  border: 1px solid white;
+  padding: 1.2rem 2.4rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
