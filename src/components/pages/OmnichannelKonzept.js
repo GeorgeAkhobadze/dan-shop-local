@@ -2,13 +2,14 @@ import { useState } from "react";
 
 import classes from "./ProductComp.module.css";
 import HeaderComponent from "../HeaderComponent";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const OmnichannelKonzept = () => {
   const [product, setProduct] = useState(
     JSON.parse(localStorage.getItem("omnichannelKonzept"))
   );
 
+  const history = useHistory()
   const [secondQuestion, setSecondQuestion] = useState(true);
   const [thirdQuestion, setThirdQuestion] = useState(false);
   const [fourthQuestion, setFourthQuestion] = useState(false);
@@ -1530,6 +1531,7 @@ const OmnichannelKonzept = () => {
                 className={classes["back-next-btns"]}
                 onClick={() => {
                   setAddCartModal(true);
+                  history.push("/productCart")
                 }}
               >
                 Zum Warenkorb

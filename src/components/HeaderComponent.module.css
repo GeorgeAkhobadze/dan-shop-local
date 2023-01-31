@@ -26,6 +26,7 @@ header nav ul {
   font-size: 1.4rem;
   font-weight: 600;
   margin-right: 20rem;
+  flex-direction: row;
 }
 header nav ul li {
   padding: 1.3rem 2rem;

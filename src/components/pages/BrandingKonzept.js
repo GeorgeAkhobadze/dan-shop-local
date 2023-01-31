@@ -2,13 +2,15 @@ import { useState } from "react";
 
 import classes from "./ProductComp.module.css";
 import HeaderComponent from "../HeaderComponent";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const BrandingKonzept = () => {
   const [product, setProduct] = useState(
     JSON.parse(localStorage.getItem("brandingKonzept"))
   );
 
+
+  const history = useHistory;
   const [secondQuestion, setSecondQuestion] = useState(true);
   const [thirdQuestion, setThirdQuestion] = useState(false);
   const [fourthQuestion, setFourthQuestion] = useState(false);
@@ -1071,6 +1073,7 @@ const BrandingKonzept = () => {
                 className={classes["back-next-btns"]}
                 onClick={() => {
                   setAddCartModal(true);
+                  history.push("/productCart")
                 }}
               >
                 Zum Warenkorb

@@ -2,13 +2,14 @@ import { useState } from "react";
 
 import classes from "./ProductComp.module.css";
 import HeaderComponent from "../HeaderComponent";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const NamingProduct = () => {
   const [product, setProduct] = useState(
     JSON.parse(localStorage.getItem("naming"))
   );
 
+  const history = useHistory();
   const [firstQuestion, setFirstQuestion] = useState(true);
   const [secondQuestion, setSecondQuestion] = useState(false);
   const [thirdQuestion, setThirdQuestion] = useState(false);
@@ -985,6 +986,7 @@ const NamingProduct = () => {
                 className={classes["back-next-btns"]}
                 onClick={() => {
                   setAddCartModal(true);
+                  history.push("/productCart")
                 }}
               >
                 Zum Warenkorb

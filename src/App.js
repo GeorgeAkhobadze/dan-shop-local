@@ -10,6 +10,7 @@ import OmnichannelKonzept from "./components/pages/OmnichannelKonzept";
 import CorporateDesign from "./components/pages/CorporateDesign";
 import BrandingKonzept from "./components/pages/BrandingKonzept";
 import BasketOfGoods from "./components/pages/BasketOfGoods";
+import ProductCart from "./components/pages/productCart";
 
 function App() {
   return (
@@ -43,6 +44,9 @@ function App() {
       </Route>
       <Route path="/basket">
         <BasketOfGoods/>
+      </Route>
+      <Route path="/productCart">
+        <ProductCart/>
       </Route>
     </div>
   );
